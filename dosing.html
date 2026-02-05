@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozempic Dosing Guide — Titration Schedule & Administration</title>
+    <meta name="description" content="Complete Ozempic dosing guide including starting dose, titration schedule, injection technique, and dose adjustment recommendations from FDA-approved prescribing information.">
+    <link rel="canonical" href="https://ozempic.md/dosing.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .dosing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .dosing-table thead {
+            background: var(--bg-secondary);
+        }
+        .dosing-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .dosing-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .dosing-table tr:last-child td {
+            border-bottom: none;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .dosing-table { font-size: 13px; }
+            .dosing-table th, .dosing-table td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">ozempic<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/dosing.html">Dosing</a>
+                <a href="/side-effects.html">Side Effects</a>
+                <a href="/cost-insurance.html">Cost & Insurance</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Dosing Guide</div>
+            <h1>Ozempic Dosing Schedule & Administration</h1>
+            <p class="page-subtitle">FDA-approved dosing regimen, titration schedule, injection technique, and dose adjustment recommendations for Ozempic (semaglutide).</p>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Prescription Only</h3>
+            <p>Ozempic requires a prescription and medical supervision. This guide is for educational purposes only. Your healthcare provider will determine the appropriate dose and titration schedule for you. Never adjust your dose without consulting your doctor.</p>
+        </div>
+
+        <section class="section">
+            <h2>Standard Dosing Schedule</h2>
+            <p>Ozempic is administered once weekly by subcutaneous injection. The standard titration schedule is designed to minimize gastrointestinal side effects while achieving therapeutic efficacy.</p>
+            
+            <table class="dosing-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Dose</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Weeks 1-4</td>
+                        <td><strong>0.25 mg once weekly</strong></td>
+                        <td>Initiation dose (not effective for glycemic control, used to reduce GI side effects)</td>
+                    </tr>
+                    <tr>
+                        <td>Weeks 5+</td>
+                        <td><strong>0.5 mg once weekly</strong></td>
+                        <td>First maintenance dose</td>
+                    </tr>
+                    <tr>
+                        <td>After 4 weeks at 0.5 mg</td>
+                        <td><strong>1 mg once weekly</strong></td>
+                        <td>Second maintenance dose (if additional glycemic control needed)</td>
+                    </tr>
+                    <tr>
+                        <td>After 4 weeks at 1 mg</td>
+                        <td><strong>2 mg once weekly</strong></td>
+                        <td>Maximum dose (if additional glycemic control needed)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Injection Technique</h2>
+            <p>Ozempic is administered as a subcutaneous injection. Follow these steps for proper administration:</p>
+            
+            <h3>Injection Sites</h3>
+            <ul>
+                <li><strong>Abdomen:</strong> Preferred site for most patients. Inject at least 2 inches away from belly button.</li>
+                <li><strong>Thigh:</strong> Front or side of thigh, middle section.</li>
+                <li><strong>Upper arm:</strong> Back of upper arm (may require assistance).</li>
+            </ul>
+            <p><strong>Rotate injection sites</strong> each week to reduce the risk of lipodystrophy (changes in fat tissue).</p>
+            
+            <h3>Administration Steps</h3>
+            <ol>
+                <li>Wash hands thoroughly</li>
+                <li>Check the Ozempic pen to ensure it contains clear, colorless solution (discard if cloudy or discolored)</li>
+                <li>Attach a new needle to the pen</li>
+                <li>Prime the pen (only needed when using a new pen) by dialing to the flow check symbol and pressing the button</li>
+                <li>Select your dose using the dose selector</li>
+                <li>Clean the injection site with an alcohol swab</li>
+                <li>Insert the needle at a 90-degree angle</li>
+                <li>Press and hold the dose button until the dose counter shows "0"</li>
+                <li>Keep the needle in the skin for at least 6 seconds after the counter reaches "0"</li>
+                <li>Remove the needle and dispose of it in a sharps container</li>
+                <li>Store the pen (without needle attached) in the refrigerator</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Missed Dose</h2>
+            <p>If you miss a dose of Ozempic:</p>
+            <ul>
+                <li><strong>If ≤5 days have passed:</strong> Take the missed dose as soon as possible.</li>
+                <li><strong>If >5 days have passed:</strong> Skip the missed dose and resume your regular schedule with the next weekly dose.</li>
+            </ul>
+            <div class="info-box">
+                <h3>💡 Tip: Set a Weekly Reminder</h3>
+                <p>Choose a consistent day and time each week (e.g., every Sunday morning). Set a phone reminder or use the Ozempic app to help you remember your weekly injection.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Dose Adjustments</h2>
+            
+            <h3>When to Increase Dose</h3>
+            <p>Your healthcare provider may increase your dose if:</p>
+            <ul>
+                <li>Your A1C or fasting blood glucose remains above target after at least 4 weeks on current dose</li>
+                <li>You are tolerating the current dose without significant side effects</li>
+                <li>You have not reached the maximum dose of 2 mg once weekly</li>
+            </ul>
+            
+            <h3>When to Delay Dose Increase</h3>
+            <p>Your provider may delay titration if you experience:</p>
+            <ul>
+                <li>Persistent nausea, vomiting, or diarrhea</li>
+                <li>Significant dehydration</li>
+                <li>Hypoglycemia (especially if taking insulin or sulfonylureas)</li>
+            </ul>
+            
+            <div class="warning-box">
+                <h3>⚠️ Hypoglycemia Risk</h3>
+                <p>When Ozempic is used with insulin or insulin secretagogues (like sulfonylureas), the risk of hypoglycemia increases. Your doctor may reduce your insulin or sulfonylurea dose when starting Ozempic. Monitor blood glucose closely and report symptoms of low blood sugar (shakiness, sweating, confusion, rapid heartbeat).</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Special Populations</h2>
+            
+            <h3>Renal Impairment</h3>
+            <p>No dose adjustment is needed for patients with mild, moderate, or severe renal impairment. However, Ozempic has not been studied in patients with end-stage renal disease, so use with caution and monitor closely.</p>
+            
+            <h3>Hepatic Impairment</h3>
+            <p>No dose adjustment is needed for patients with hepatic impairment.</p>
+            
+            <h3>Elderly Patients (≥65 years)</h3>
+            <p>No dose adjustment is needed based solely on age. However, dose selection should be cautious, and patients should be monitored for adverse effects.</p>
+            
+            <h3>Pediatric Use</h3>
+            <p>Ozempic is not approved for use in patients under 18 years of age. Safety and efficacy have not been established in pediatric populations.</p>
+        </section>
+
+        <section class="section">
+            <h2>Storage & Handling</h2>
+            <ul>
+                <li><strong>Before first use:</strong> Store in refrigerator (36°F to 46°F / 2°C to 8°C). Do not freeze. Keep away from the cooling element.</li>
+                <li><strong>After first use:</strong> May be stored in the refrigerator or at room temperature (59°F to 86°F / 15°C to 30°C) for up to 56 days.</li>
+                <li><strong>Keep the pen cap on</strong> when not in use to protect from light.</li>
+                <li><strong>Discard the pen</strong> 56 days after first use, even if there is medication remaining.</li>
+                <li><strong>Remove and discard needle</strong> after each use. Never store the pen with a needle attached.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 ozempic.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on FDA-approved prescribing information. This is not medical advice. Always consult your healthcare provider.</p>
+        </div>
+    </footer>
+</body>
+</html>

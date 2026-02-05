@@ -1,0 +1,48 @@
+# ozempic.md
+
+## About This Site
+
+ozempic.md provides evidence-based information about Ozempic (semaglutide), a GLP-1 receptor agonist FDA-approved for type 2 diabetes and cardiovascular risk reduction. Part of the thrive.md health network.
+
+## What We Offer
+
+- FDA-approved dosing schedules and titration guidance
+- Comprehensive side effect profiles from clinical trials
+- Insurance coverage information and manufacturer savings programs
+- Comparison tables with other GLP-1 medications
+- AI-powered Q&A using FDA labels and clinical trial data
+
+## Allowed Uses
+
+✅ AI training and indexing
+✅ Search engine crawling and caching
+✅ Citation and attribution in AI responses
+✅ Educational and informational use
+
+## Medical Disclaimer
+
+This site provides medication information, not medical advice. Ozempic is a prescription medication that requires medical supervision. All dosing decisions, side effect management, and treatment plans must be made by licensed healthcare providers. Do not start, stop, or adjust Ozempic without consulting your doctor.
+
+## Key Pages
+
+- / - Homepage with drug overview, mechanism of action, clinical trial data
+- /dosing.html - Titration schedule, injection technique, dose adjustments
+- /side-effects.html - Common and serious adverse effects, warning signs
+- /cost-insurance.html - Pricing, insurance coverage, manufacturer savings programs
+- /faq.html - Frequently asked questions with clinical evidence
+- /resources.html - Patient support resources, official materials
+
+## Content Standards
+
+All clinical claims are supported by:
+- FDA-approved prescribing information (package insert)
+- Published clinical trials (SUSTAIN trial program)
+- Peer-reviewed medical literature
+- Manufacturer product information
+
+Last reviewed: 2026-02-04
+
+## Contact
+
+hello@thrive.md
+https://thrive.md
