@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ozempic.md/blog/ozempic-dosing-schedule/#article"},
           "wordCount": "595",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How long does it take for Ozempic to work?", "acceptedAnswer": {"@type": "Answer", "text": "Appetite suppression begins within the first 1-2 weeks, but meaningful weight loss and glucose reduction typically take 8-12 weeks (once you reach 0.5-1mg). Full effects at any given dose require about 4-5 weeks to reach steady state. Patience during titration is important."}}, {"@type": "Question", "name": "Can I start Ozempic at a higher dose?", "acceptedAnswer": {"@type": "Answer", "text": "No. Starting above 0.25mg dramatically increases GI side effects and offers no efficacy advantage. The titration schedule exists for safety and tolerability. Even patients switching from another GLP-1 typically start at the lowest dose."}}, {"@type": "Question", "name": "What happens if I miss an Ozempic dose?", "acceptedAnswer": {"@type": "Answer", "text": "If within 5 days of the scheduled dose: take it immediately. If more than 5 days late: skip the missed dose and take the next one on schedule. Don't take two doses at once. Missing occasional doses doesn't reset your progress, but consistent weekly dosing produces the best results."}}, {"@type": "Question", "name": "Should I take Ozempic with food?", "acceptedAnswer": {"@type": "Answer", "text": "Ozempic can be injected with or without food \u2014 the injection goes under the skin, not into the GI tract. However, eating large or fatty meals within hours of injection may worsen nausea in some people. Some users prefer to inject in the evening to sleep through any initial nausea."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

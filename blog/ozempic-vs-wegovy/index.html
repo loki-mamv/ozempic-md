@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ozempic.md/blog/ozempic-vs-wegovy/#article"},
           "wordCount": "500",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is Wegovy stronger than Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "Wegovy reaches a higher maximum dose (2.4mg vs 2mg), which produces slightly more weight loss. At equal doses, they're identical. The difference is modest \u2014 about 2-3% additional body weight loss at the highest Wegovy dose compared to the highest Ozempic dose."}}, {"@type": "Question", "name": "Can my doctor prescribe Ozempic for weight loss?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, off-label prescribing is legal and common. However, insurance may not cover Ozempic when prescribed for weight loss (vs diabetes). Your doctor can prescribe it, but you may face prior authorization hurdles or need to pay out of pocket."}}, {"@type": "Question", "name": "Do I need to switch from Ozempic to Wegovy?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. If Ozempic at your current dose is producing satisfactory weight loss and your insurance covers it, there's no medical reason to switch. Switching makes sense if you want the higher 2.4mg dose or if Wegovy becomes easier to obtain on your insurance."}}, {"@type": "Question", "name": "Are the side effects different between Ozempic and Wegovy?", "acceptedAnswer": {"@type": "Answer", "text": "At equivalent doses, side effects are identical. Wegovy's higher maximum dose may produce somewhat more GI side effects at the 2.4mg level simply because it's a higher dose of the same drug. The titration schedule helps manage this."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

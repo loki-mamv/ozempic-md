@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ozempic.md/blog/ozempic-food-plan/#article"},
           "wordCount": "591",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can you eat whatever you want on Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "Technically yes, but it's unwise. Ozempic reduces how much you eat, not what. Eating junk food in smaller quantities still means inadequate protein, poor nutrition, and worse results. The reduced appetite is an opportunity to improve food quality, not just quantity."}}, {"@type": "Question", "name": "Why do I feel nauseous after eating on Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "Ozempic slows gastric emptying, so food sits in your stomach longer. Eating too much, too fast, or too fatty overwhelms the slower system. Smaller portions, slower eating, and leaner foods typically resolve this. If nausea persists regardless of what you eat, discuss with your prescriber."}}, {"@type": "Question", "name": "How many calories should I eat on Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "There's no universal number. Most people naturally settle into 1,200-1,800 calories depending on body size and activity level. Don't go below 1,200 (women) or 1,500 (men) without medical supervision. Focus on hitting protein targets first, then fill remaining calories with vegetables, complex carbs, and healthy fats."}}, {"@type": "Question", "name": "Should I eat even when I'm not hungry on Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 at minimum, eat enough to meet protein requirements and prevent nutritional deficiency. Skipping meals entirely leads to muscle loss, fatigue, and nutrient gaps. Three small protein-rich meals plus 1-2 snacks is a reasonable framework even when appetite is very low."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

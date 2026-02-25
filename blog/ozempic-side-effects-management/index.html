@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ozempic.md/blog/ozempic-side-effects-management/#article"},
           "wordCount": "579",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How long does Ozempic nausea last?", "acceptedAnswer": {"@type": "Answer", "text": "Nausea typically peaks in the first 2-4 weeks at each new dose and improves as your body adjusts. Most people find it manageable by weeks 4-8 at their maintenance dose. If severe nausea persists beyond 6-8 weeks at a stable dose, discuss with your prescriber."}}, {"@type": "Question", "name": "Can you drink alcohol on Ozempic?", "acceptedAnswer": {"@type": "Answer", "text": "There's no absolute contraindication, but alcohol tolerance often decreases on GLP-1 medications. Alcohol can worsen nausea, increase hypoglycemia risk (if diabetic), and adds empty calories that undermine weight loss. Many users find they naturally drink less. If you drink, start slowly and see how your body responds."}}, {"@type": "Question", "name": "Does Ozempic cause stomach paralysis (gastroparesis)?", "acceptedAnswer": {"@type": "Answer", "text": "GLP-1 medications slow gastric emptying, which is part of their mechanism. Rarely, this can become excessive, causing gastroparesis-like symptoms (severe nausea, vomiting, early satiety). This is different from permanent gastroparesis and typically resolves after dose reduction or discontinuation. Report severe, persistent symptoms."}}, {"@type": "Question", "name": "Will Ozempic side effects get worse at higher doses?", "acceptedAnswer": {"@type": "Answer", "text": "GI side effects tend to recur briefly with each dose increase but are generally manageable with the strategies described above. The worst side effects typically occur during the 0.25 to 0.5mg transition. Many people find later dose increases less symptomatic because their body has partially adapted."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
