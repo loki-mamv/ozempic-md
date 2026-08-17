@@ -29,10 +29,12 @@
           "lastReviewed": "2026-02-01",
           "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
           "mainEntity": {
-            "@type": "Drug",
+            "@type": "MedicalTherapy",
+            "@id": "https://ozempic.md/#ozempic",
             "name": "Ozempic",
-            "activeIngredient": "Semaglutide",
-            "drugClass": "GLP-1 receptor agonist",
+            "alternateName": ["Semaglutide"],
+            "description": "Ozempic (semaglutide) is a GLP-1 receptor agonist made by Novo Nordisk.",
+            "relevantSpecialty": {"@id": "https://schema.org/Endocrine"},
             "adverseOutcome": [
               {"@type": "MedicalEntity", "name": "Nausea"},
               {"@type": "MedicalEntity", "name": "Vomiting"},
@@ -40,8 +42,7 @@
               {"@type": "MedicalEntity", "name": "Constipation"},
               {"@type": "MedicalEntity", "name": "Pancreatitis"},
               {"@type": "MedicalEntity", "name": "Gallbladder disease"}
-            ],
-            "manufacturer": {"@type": "Organization", "name": "Novo Nordisk"}
+            ]
           }
         },
         {

@@ -89,22 +89,25 @@
           "lastReviewed": "2026-02-04",
           "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
           "mainEntity": {
-            "@type": "Drug",
+            "@type": "MedicalTherapy",
+            "@id": "https://ozempic.md/#ozempic",
             "name": "Ozempic",
             "alternateName": ["Semaglutide", "Semaglutide injection"],
-            "description": "Ozempic is a once-weekly injectable GLP-1 receptor agonist (semaglutide) used to improve blood sugar control in adults with type 2 diabetes and reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease.",
-            "activeIngredient": "Semaglutide",
-            "dosageForm": "Injection (subcutaneous)",
-            "administrationRoute": "Subcutaneous injection",
-            "manufacturer": {
-              "@type": "Organization",
-              "name": "Novo Nordisk"
+            "description": "Ozempic (semaglutide) is a once-weekly subcutaneous injection made by Novo Nordisk. It is a GLP-1 receptor agonist used to improve blood sugar control in adults with type 2 diabetes and to reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease.",
+            "howPerformed": "Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist given as a once-weekly subcutaneous injection. It increases insulin secretion, decreases glucagon secretion, and slows gastric emptying.",
+            "doseSchedule": {"@type": "DoseSchedule", "frequency": "Once weekly"},
+            "relevantSpecialty": {"@id": "https://schema.org/Endocrine"},
+            "contraindication": {
+              "@type": "MedicalContraindication",
+              "name": "History of medullary thyroid carcinoma, Multiple Endocrine Neoplasia syndrome type 2, hypersensitivity to semaglutide"
             },
-            "drugClass": "GLP-1 receptor agonist",
-            "clinicalPharmacology": "Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist that increases insulin secretion, decreases glucagon secretion, and slows gastric emptying.",
-            "indication": "Type 2 diabetes mellitus, cardiovascular risk reduction in type 2 diabetes with established cardiovascular disease",
-            "contraindication": "History of medullary thyroid carcinoma, Multiple Endocrine Neoplasia syndrome type 2, hypersensitivity to semaglutide",
-            "warning": "Thyroid C-cell tumors warning, pancreatitis risk, diabetic retinopathy complications, acute kidney injury risk, hypoglycemia risk when combined with insulin or sulfonylureas"
+            "seriousAdverseOutcome": [
+              {"@type": "MedicalEntity", "name": "Thyroid C-cell tumors"},
+              {"@type": "MedicalEntity", "name": "Pancreatitis"},
+              {"@type": "MedicalEntity", "name": "Diabetic retinopathy complications"},
+              {"@type": "MedicalEntity", "name": "Acute kidney injury"},
+              {"@type": "MedicalEntity", "name": "Hypoglycemia when combined with insulin or sulfonylureas"}
+            ]
           },
           "speakable": {
             "@type": "SpeakableSpecification",
