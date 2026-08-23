@@ -61,99 +61,136 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ozempic.md/#website",
+      "url": "https://ozempic.md",
+      "name": "ozempic.md — Ozempic (Semaglutide) Information",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://ozempic.md/#webpage",
+      "name": "Ozempic (Semaglutide) for Type 2 Diabetes and Weight Loss",
+      "description": "Evidence-based information about Ozempic (semaglutide), a GLP-1 agonist for type 2 diabetes and weight management.",
+      "url": "https://ozempic.md/",
+      "isPartOf": {
+        "@id": "https://ozempic.md/#website"
+      },
+      "lastReviewed": "2026-02-04",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalTherapy",
+        "@id": "https://ozempic.md/#ozempic",
+        "name": "Ozempic",
+        "alternateName": [
+          "Semaglutide",
+          "Semaglutide injection"
+        ],
+        "description": "Ozempic (semaglutide) is a once-weekly subcutaneous injection made by Novo Nordisk. It is a GLP-1 receptor agonist used to improve blood sugar control in adults with type 2 diabetes and to reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease.",
+        "howPerformed": "Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist given as a once-weekly subcutaneous injection. It increases insulin secretion, decreases glucagon secretion, and slows gastric emptying.",
+        "doseSchedule": {
+          "@type": "DoseSchedule",
+          "frequency": "Once weekly"
         },
-        {
-          "@type": "WebSite",
-          "@id": "https://ozempic.md/#website",
-          "url": "https://ozempic.md",
-          "name": "ozempic.md — Ozempic (Semaglutide) Information",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
+        "relevantSpecialty": {
+          "@id": "https://schema.org/Endocrine"
         },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://ozempic.md/#webpage",
-          "name": "Ozempic (Semaglutide) for Type 2 Diabetes and Weight Loss",
-          "description": "Evidence-based information about Ozempic (semaglutide), a GLP-1 agonist for type 2 diabetes and weight management.",
-          "url": "https://ozempic.md/",
-          "isPartOf": {"@id": "https://ozempic.md/#website"},
-          "lastReviewed": "2026-02-04",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalTherapy",
-            "@id": "https://ozempic.md/#ozempic",
-            "name": "Ozempic",
-            "alternateName": ["Semaglutide", "Semaglutide injection"],
-            "description": "Ozempic (semaglutide) is a once-weekly subcutaneous injection made by Novo Nordisk. It is a GLP-1 receptor agonist used to improve blood sugar control in adults with type 2 diabetes and to reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease.",
-            "howPerformed": "Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist given as a once-weekly subcutaneous injection. It increases insulin secretion, decreases glucagon secretion, and slows gastric emptying.",
-            "doseSchedule": {"@type": "DoseSchedule", "frequency": "Once weekly"},
-            "relevantSpecialty": {"@id": "https://schema.org/Endocrine"},
-            "contraindication": {
-              "@type": "MedicalContraindication",
-              "name": "History of medullary thyroid carcinoma, Multiple Endocrine Neoplasia syndrome type 2, hypersensitivity to semaglutide"
-            },
-            "seriousAdverseOutcome": [
-              {"@type": "MedicalEntity", "name": "Thyroid C-cell tumors"},
-              {"@type": "MedicalEntity", "name": "Pancreatitis"},
-              {"@type": "MedicalEntity", "name": "Diabetic retinopathy complications"},
-              {"@type": "MedicalEntity", "name": "Acute kidney injury"},
-              {"@type": "MedicalEntity", "name": "Hypoglycemia when combined with insulin or sulfonylureas"}
-            ]
+        "contraindication": {
+          "@type": "MedicalContraindication",
+          "name": "History of medullary thyroid carcinoma, Multiple Endocrine Neoplasia syndrome type 2, hypersensitivity to semaglutide"
+        },
+        "seriousAdverseOutcome": [
+          {
+            "@type": "MedicalEntity",
+            "name": "Thyroid C-cell tumors"
           },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          {
+            "@type": "MedicalEntity",
+            "name": "Pancreatitis"
+          },
+          {
+            "@type": "MedicalEntity",
+            "name": "Diabetic retinopathy complications"
+          },
+          {
+            "@type": "MedicalEntity",
+            "name": "Acute kidney injury"
+          },
+          {
+            "@type": "MedicalEntity",
+            "name": "Hypoglycemia when combined with insulin or sulfonylureas"
+          }
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".stat-number",
+          ".hero-subtitle"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ozempic.md/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Ozempic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ozempic is the brand name for semaglutide, a once-weekly injectable medication FDA-approved to improve blood sugar control in adults with type 2 diabetes and to reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease. It is a GLP-1 receptor agonist that works by increasing insulin secretion, decreasing glucagon secretion, and slowing gastric emptying."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://ozempic.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is Ozempic?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ozempic is the brand name for semaglutide, a once-weekly injectable medication FDA-approved to improve blood sugar control in adults with type 2 diabetes and to reduce the risk of major cardiovascular events in adults with type 2 diabetes and known heart disease. It is a GLP-1 receptor agonist that works by increasing insulin secretion, decreasing glucagon secretion, and slowing gastric emptying."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Ozempic approved for weight loss?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ozempic is FDA-approved only for type 2 diabetes, not for weight loss. However, a higher-dose formulation of the same active ingredient (semaglutide) is marketed as Wegovy and is FDA-approved specifically for chronic weight management. While Ozempic can cause weight loss as a side effect (average 12-14 pounds in clinical trials), using it off-label for weight loss should only be done under medical supervision."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much does Ozempic cost?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Without insurance, Ozempic typically costs $900-$1,000 per month. With insurance, copays vary widely from $25 to $300+ depending on your plan. Novo Nordisk offers a savings card that may reduce copays to $25 for up to 24 months for eligible commercially insured patients. Medicare and Medicaid coverage varies by plan and state."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the most common side effects?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The most common side effects are gastrointestinal: nausea (15-20% of patients), diarrhea (9%), vomiting (9%), constipation (5%), and abdominal pain (6%). These typically improve over time. Serious but rare risks include pancreatitis, gallbladder problems, kidney injury, diabetic retinopathy complications, and thyroid tumors (seen in animal studies, not yet confirmed in humans)."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Is Ozempic approved for weight loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ozempic is FDA-approved only for type 2 diabetes, not for weight loss. However, a higher-dose formulation of the same active ingredient (semaglutide) is marketed as Wegovy and is FDA-approved specifically for chronic weight management. While Ozempic can cause weight loss as a side effect (average 12-14 pounds in clinical trials), using it off-label for weight loss should only be done under medical supervision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Ozempic cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Without insurance, Ozempic typically costs $900-$1,000 per month. With insurance, copays vary widely from $25 to $300+ depending on your plan. Novo Nordisk offers a savings card that may reduce copays to $25 for up to 24 months for eligible commercially insured patients. Medicare and Medicaid coverage varies by plan and state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the most common side effects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common side effects are gastrointestinal: nausea (15-20% of patients), diarrhea (9%), vomiting (9%), constipation (5%), and abdominal pain (6%). These typically improve over time. Serious but rare risks include pancreatitis, gallbladder problems, kidney injury, diabetic retinopathy complications, and thyroid tumors (seen in animal studies, not yet confirmed in humans)."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -873,11 +910,11 @@
             <nav>
                 <a href="#ask" onclick="event.preventDefault(); activateSplitMode(); document.getElementById('panel-input').focus();">Ask</a>
                 <a href="/dosing.html">Dosing</a>
-                <a href="/side-effects.html">Side Effects</a>
-                <a href="/cost-insurance.html">Cost & Insurance</a>
-                <a href="/faq.html">FAQ</a>
+                <a href="/side-effects-long-term">Side Effects</a>
+                <a href="/ozempic-cost">Cost & Insurance</a>
+                <a href="/how-ozempic-works">How It Works</a>
                 <a href="/blog/">Blog</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/ozempic-vs-wegovy">Ozempic vs Wegovy</a>
             </nav>
         </div>
     </header>
@@ -1032,7 +1069,24 @@
             </ul>
             <p style="margin-top: 20px;"><strong>This is not medical advice.</strong> Only your healthcare provider can determine if Ozempic is appropriate for you.</p>
         </section>
-
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Is Ozempic approved for weight loss?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Ozempic is FDA-approved only for type 2 diabetes, not for weight loss. However, a higher-dose formulation of the same active ingredient (semaglutide) is marketed as Wegovy and is FDA-approved specifically for chronic weight management. While Ozempic can cause weight loss as a side effect (average 12-14 pounds in clinical trials), using it off-label for weight loss should only be done under medical supervision.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">How much does Ozempic cost?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Without insurance, Ozempic typically costs $900-$1,000 per month. With insurance, copays vary widely from $25 to $300+ depending on your plan. Novo Nordisk offers a savings card that may reduce copays to $25 for up to 24 months for eligible commercially insured patients. Medicare and Medicaid coverage varies by plan and state.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What are the most common side effects?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">The most common side effects are gastrointestinal: nausea (15-20% of patients), diarrhea (9%), vomiting (9%), constipation (5%), and abdominal pain (6%). These typically improve over time. Serious but rare risks include pancreatitis, gallbladder problems, kidney injury, diabetic retinopathy complications, and thyroid tumors (seen in animal studies, not yet confirmed in humans).</p>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="related">
             <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Related Topics</div>
@@ -1098,13 +1152,13 @@
             <div class="footer-links">
                 <h4>Information</h4>
                 <a href="/dosing.html">Dosing Guide</a>
-                <a href="/side-effects.html">Side Effects</a>
-                <a href="/cost-insurance.html">Cost & Insurance</a>
-                <a href="/faq.html">FAQ</a>
+                <a href="/side-effects-long-term">Side Effects</a>
+                <a href="/ozempic-cost">Cost & Insurance</a>
+                <a href="/how-ozempic-works">How It Works</a>
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
-                <a href="/resources.html">Patient Resources</a>
+                <a href="/ozempic-vs-mounjaro">Ozempic vs Mounjaro</a>
                 <a href="https://www.ozempic.com" target="_blank" rel="noopener">Official Ozempic Site</a>
                 <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/209637s003lbl.pdf" target="_blank" rel="noopener">FDA Prescribing Info</a>
             </div>
